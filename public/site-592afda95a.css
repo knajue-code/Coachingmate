@@ -1,0 +1,284 @@
+/* CoachingMate · Entwurf für einen Squarespace-Code-Block.
+   Anton und Epilogue werden bereits von der bestehenden Website geladen.
+   Alle Regeln sind auf diesen Seitenbaustein begrenzt. */
+#cm-coaching {
+  --cm-dark: #1d231c;
+  --cm-aqua: #b7fcfb;
+  --cm-purple: #584a95;
+  --cm-stone: #e1dfd9;
+  --cm-white: #ffffff;
+  width: 100%;
+  color: var(--cm-dark);
+  background: var(--cm-stone);
+  font-family: "Epilogue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.7;
+  text-align: left;
+  overflow-wrap: break-word;
+  isolation: isolate;
+}
+#cm-coaching *, #cm-coaching *::before, #cm-coaching *::after { box-sizing: border-box; }
+#cm-coaching :where(h1,h2,h3,p,figure,blockquote,ul,ol) { margin: 0; padding: 0; }
+#cm-coaching :where(h1,h2,h3) {
+  font-family: "Anton", "Arial Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: inherit;
+  letter-spacing: .005em;
+  line-height: 1.13;
+  text-transform: uppercase;
+  word-break: normal;
+  hyphens: manual;
+}
+#cm-coaching h1 { font-size: clamp(42px, 5.8vw, 80px); }
+#cm-coaching h2 { font-size: clamp(32px, 3.5vw, 48px); }
+#cm-coaching h3 { font-size: clamp(25px, 2.3vw, 31px); }
+#cm-coaching p { font-family: inherit; font-size: inherit; line-height: inherit; color: inherit; }
+#cm-coaching a { color: inherit; text-decoration: none; background-image: none; }
+#cm-coaching a:focus-visible { outline: 3px solid currentColor; outline-offset: 6px; }
+#cm-coaching img { display: block; max-width: 100%; width: 100%; height: auto; }
+#cm-coaching .cm-wrap { width: min(1120px, calc(100% - 80px)); margin-inline: auto; }
+#cm-coaching .cm-section { padding-block: clamp(56px, 7vw, 96px); }
+#cm-coaching .cm-eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; line-height: 1.6; }
+#cm-coaching .cm-intro { font-size: 18px; line-height: 1.7; max-width: 55ch; }
+#cm-coaching .cm-hero { background: var(--cm-dark); color: var(--cm-aqua); padding-block: clamp(48px, 6vw, 88px); }
+#cm-coaching .cm-hero-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+#cm-coaching .cm-hero h1 { margin-block: 24px; }
+#cm-coaching .cm-hero h1 span { color: var(--cm-white); }
+#cm-coaching .cm-hero .cm-intro { color: var(--cm-stone); }
+#cm-coaching .cm-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 20px 28px; margin-top: 30px; }
+#cm-coaching .cm-button {
+  display: inline-flex; align-items: center; justify-content: center; gap: 20px;
+  min-height: 54px; max-width: 100%; padding: 15px 23px;
+  font-family: inherit; font-size: 14px; line-height: 1.45; font-weight: 600;
+  text-transform: none; text-align: center; letter-spacing: 0;
+  color: var(--cm-dark); background: var(--cm-aqua);
+  border: 1px solid transparent; border-radius: 2px;
+  transition: background-color .18s ease, color .18s ease;
+}
+#cm-coaching .cm-button:hover { background: var(--cm-white); }
+#cm-coaching .cm-button span, #cm-coaching .cm-text-link span { font-size: 22px; line-height: 1; }
+#cm-coaching .cm-text-link { display: inline-flex; align-items: center; gap: 12px; font-size: 14px; min-height: 44px; text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 1px; }
+#cm-coaching .cm-text-link:hover { text-decoration-thickness: 2px; }
+#cm-coaching .cm-hero-note { font-size: 12px; color: var(--cm-stone); margin-top: 18px; }
+#cm-coaching .cm-portrait { position: relative; padding: 0 0 20px 20px; }
+#cm-coaching .cm-portrait::before { content: ""; position: absolute; background: var(--cm-purple); inset: 25px 20px 0 0; z-index: -1; }
+#cm-coaching .cm-portrait img { aspect-ratio: 4 / 5; object-fit: cover; object-position: center 35%; }
+#cm-coaching .cm-portrait figcaption { padding: 19px 22px; background: var(--cm-aqua); color: var(--cm-dark); font-size: 13px; line-height: 1.6; }
+#cm-coaching .cm-portrait strong { display: block; font-size: 17px; font-weight: 600; }
+#cm-coaching .cm-section-head { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: end; margin-bottom: 40px; }
+#cm-coaching .cm-section-head h2 { margin-top: 15px; }
+#cm-coaching .cm-section-head > p { max-width: 47ch; }
+#cm-coaching .cm-topics { scroll-margin-top: 110px; }
+#cm-coaching .cm-topic-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 44px; }
+#cm-coaching .cm-topic { display: grid; grid-template-columns: 35px 1fr; gap: 15px; padding: 28px 0; border-top: 1px solid rgba(29,35,28,.28); }
+#cm-coaching .cm-number { color: var(--cm-purple); font-size: 12px; font-weight: 600; letter-spacing: .07em; padding-top: 7px; }
+#cm-coaching .cm-topic h3 { margin-bottom: 13px; }
+#cm-coaching .cm-topic p { max-width: 47ch; font-size: 15px; }
+#cm-coaching .cm-topic .cm-eyebrow { font-size: 11px; letter-spacing: .08em; color: var(--cm-purple); margin-bottom: 12px; }
+#cm-coaching .cm-topic .cm-text-link { color: var(--cm-purple); margin-top: 9px; }
+#cm-coaching .cm-format { background: var(--cm-aqua); }
+#cm-coaching .cm-format-grid { display: grid; grid-template-columns: 1.15fr 1fr 1fr; gap: 32px; }
+#cm-coaching .cm-format-item { border-top: 1px solid rgba(29,35,28,.3); padding-top: 22px; }
+#cm-coaching .cm-format-item h3 { margin-bottom: 12px; }
+#cm-coaching .cm-format-item p { font-size: 15px; }
+#cm-coaching .cm-format-item .cm-text-link { margin-top: 12px; }
+#cm-coaching .cm-tag { display: inline-block; font-family: "Epilogue", sans-serif; font-size: 10px; line-height: 1.6; letter-spacing: .08em; vertical-align: middle; margin: 0 0 4px 8px; background: var(--cm-dark); color: var(--cm-aqua); padding: 4px 7px; }
+#cm-coaching .cm-voices { background: var(--cm-purple); color: var(--cm-white); }
+#cm-coaching .cm-voices h2 { margin-top: 15px; color: var(--cm-aqua); }
+#cm-coaching .cm-quotes { display: grid; grid-template-columns: repeat(3,1fr); gap: 36px; margin-top: 38px; }
+#cm-coaching .cm-quote { border-top: 1px solid rgba(255,255,255,.4); padding-top: 24px; }
+#cm-coaching .cm-quote blockquote { font-family: "Epilogue", sans-serif; font-size: 18px; line-height: 1.7; font-style: normal; border: 0; color: inherit; }
+#cm-coaching .cm-quote figcaption { font-size: 12px; margin-top: 23px; color: var(--cm-aqua); }
+#cm-coaching .cm-contact { background: var(--cm-dark); color: var(--cm-white); }
+#cm-coaching .cm-contact-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: center; }
+#cm-coaching .cm-contact h2 { color: var(--cm-aqua); margin-top: 18px; font-size: clamp(36px,4.5vw,62px); }
+#cm-coaching .cm-contact p + p { margin-top: 15px; }
+#cm-coaching .cm-contact .cm-eyebrow { color: var(--cm-stone); }
+#cm-coaching .cm-contact .cm-text-link { display: flex; width: fit-content; margin-top: 18px; font-size: 13px; overflow-wrap: anywhere; }
+@media (max-width: 850px) {
+  #cm-coaching .cm-wrap { width: calc(100% - 48px); }
+  #cm-coaching .cm-hero-grid { gap: 28px; grid-template-columns: 1.15fr .85fr; }
+  #cm-coaching .cm-hero .cm-intro { font-size: 16px; }
+  #cm-coaching .cm-section-head, #cm-coaching .cm-contact-grid { grid-template-columns: 1fr; gap: 24px; }
+  #cm-coaching .cm-topic-grid { column-gap: 28px; }
+  #cm-coaching .cm-format-grid { gap: 22px; }
+  #cm-coaching .cm-quotes { gap: 24px; }
+  #cm-coaching .cm-quote blockquote { font-size: 16px; }
+}
+@media (max-width: 620px) {
+  #cm-coaching .cm-wrap { width: calc(100% - 40px); }
+  #cm-coaching .cm-hero-grid, #cm-coaching .cm-topic-grid, #cm-coaching .cm-format-grid, #cm-coaching .cm-quotes { grid-template-columns: 1fr; }
+  #cm-coaching .cm-hero-grid { gap: 38px; }
+  #cm-coaching .cm-hero h1 { font-size: clamp(40px,10.5vw,62px); }
+  #cm-coaching .cm-portrait { max-width: 410px; width: 100%; margin-inline: auto; padding-left: 12px; padding-bottom: 12px; }
+  #cm-coaching .cm-portrait img { aspect-ratio: 5 / 4; object-position: center 30%; }
+  #cm-coaching .cm-portrait figcaption { padding: 15px 18px; }
+  #cm-coaching .cm-actions { gap: 10px 22px; }
+  #cm-coaching .cm-topic { grid-template-columns: 27px 1fr; gap: 12px; padding-block: 24px; }
+  #cm-coaching .cm-quotes { gap: 30px; }
+  #cm-coaching .cm-section-head { margin-bottom: 30px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #cm-coaching .cm-button { transition: none; }
+}
+
+/* Gemeinsame Erweiterungen des bestätigten CoachingMate-Entwurfs. */
+.cm-shell { --cm-dark:#1d231c; --cm-aqua:#b7fcfb; --cm-purple:#584a95; --cm-stone:#e1dfd9; font-family:'Epilogue',sans-serif; font-size:16px; line-height:1.7; color:var(--cm-dark); }
+.cm-shell *, .cm-shell *::before, .cm-shell *::after { box-sizing:border-box; }
+.cm-shell a { color:inherit; text-decoration:none; }
+.cm-shell a:focus-visible { outline:3px solid currentColor; outline-offset:5px; }
+.cm-shell .cm-wrap { width:min(1120px,calc(100% - 80px)); margin-inline:auto; }
+.cm-shell .cm-header { background:var(--cm-dark); color:var(--cm-aqua); border-bottom:1px solid rgba(183,252,251,.2); }
+.cm-shell .cm-header-row { display:flex; align-items:center; justify-content:space-between; gap:24px; min-height:102px; }
+.cm-shell .cm-logo { display:block; flex-shrink:0; }
+.cm-shell .cm-logo img { width:188px; height:64px; object-fit:contain; display:block; }
+.cm-shell .cm-nav { display:flex; align-items:center; gap:26px; }
+.cm-shell .cm-nav>a { font-size:14px; padding-block:12px; }
+.cm-shell .cm-nav>a:hover, .cm-shell [aria-current='page'] { text-decoration:underline; text-underline-offset:6px; }
+.cm-shell .cm-nav .cm-nav-cta { background:var(--cm-aqua); color:var(--cm-dark); padding:11px 17px; border-radius:2px; font-weight:600; }
+.cm-shell .cm-mobile-nav { display:none; }
+.cm-shell .cm-mobile-nav summary { cursor:pointer; font-size:14px; padding:14px 0; }
+.cm-shell .cm-mobile-nav nav { padding:10px 0 24px; display:grid; gap:4px; }
+.cm-shell .cm-mobile-nav a { padding:8px 0; }
+.cm-shell .cm-footer { background:var(--cm-stone); padding:64px 0 28px; }
+.cm-shell .cm-footer-grid { display:grid; grid-template-columns:1.2fr 1fr 1fr 1fr; gap:32px; }
+.cm-shell .cm-footer h2 { margin:0 0 14px; font:400 29px/1.2 'Anton',sans-serif; text-transform:uppercase; }
+.cm-shell .cm-footer h3 { font-size:13px; letter-spacing:.1em; text-transform:uppercase; margin:0 0 16px; }
+.cm-shell .cm-footer p { font-size:14px; margin:0 0 12px; }
+.cm-shell .cm-footer a { display:block; font-size:14px; padding-block:5px; }
+.cm-shell .cm-footer a:hover { text-decoration:underline; text-underline-offset:4px; }
+.cm-shell .cm-footer-bottom { border-top:1px solid #b1b3aa; padding-top:24px; margin-top:40px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px; font-size:12px; }
+.cm-shell .cm-footer-bottom div { display:flex; gap:20px; }
+.cm-shell .cm-footer-bottom a { padding:0; font-size:12px; }
+.cm-shell .cm-skip { position:fixed; top:8px; left:8px; transform:translateY(-150%); padding:12px; background:white; color:#1d231c; z-index:100; }
+.cm-shell .cm-skip:focus { transform:none; }
+#cm-coaching .cm-eyebrow { font-size:12px; }
+#cm-coaching .cm-topic p { font-size:16px; }
+#cm-coaching .cm-topic .cm-eyebrow { font-size:12px; }
+#cm-coaching .cm-breadcrumb { font-size:13px; margin-bottom:24px; display:flex; flex-wrap:wrap; gap:10px; }
+#cm-coaching .cm-breadcrumb a { text-decoration:underline; text-underline-offset:4px; }
+#cm-coaching .cm-hero-small h1 { font-size:clamp(42px,5vw,70px); max-width:18ch; }
+#cm-coaching .cm-hero-wide { max-width:860px; }
+#cm-coaching .cm-hero-wide h1 { max-width:24ch; }
+#cm-coaching .cm-scene { margin:0; position:relative; }
+#cm-coaching .cm-scene img { aspect-ratio:4/5; object-fit:cover; height:auto; }
+#cm-coaching .cm-scene figcaption { background:var(--cm-aqua); color:var(--cm-dark); padding:15px 20px; font-size:13px; }
+#cm-coaching .cm-scene-landscape img { aspect-ratio:4/3; }
+#cm-coaching .cm-lead-grid { display:grid; grid-template-columns:.85fr 1.15fr; gap:64px; align-items:start; }
+#cm-coaching .cm-lead-grid h2 { margin-top:16px; }
+#cm-coaching .cm-copy p+p { margin-top:18px; }
+#cm-coaching .cm-copy ul { padding-left:21px; margin-block:20px; }
+#cm-coaching .cm-copy li+li { margin-top:10px; }
+#cm-coaching .cm-facts { background:var(--cm-aqua); }
+#cm-coaching .cm-facts-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; padding-block:28px; }
+#cm-coaching .cm-facts-grid strong { display:block; font:400 28px/1.3 'Anton',sans-serif; text-transform:uppercase; }
+#cm-coaching .cm-facts-grid span { font-size:14px; }
+#cm-coaching .cm-steps { display:grid; grid-template-columns:repeat(3,1fr); gap:32px; list-style:none; }
+#cm-coaching .cm-step { border-top:1px solid rgba(29,35,28,.3); padding-top:22px; }
+#cm-coaching .cm-step h3 { margin:12px 0 15px; }
+#cm-coaching .cm-step p { font-size:16px; }
+#cm-coaching .cm-soft { background:white; }
+#cm-coaching .cm-links-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:30px; }
+#cm-coaching .cm-link-card { border-top:1px solid rgba(29,35,28,.3); padding:25px 0; }
+#cm-coaching .cm-link-card h3 { margin-bottom:15px; }
+#cm-coaching .cm-link-card p { font-size:16px; }
+#cm-coaching .cm-link-card .cm-text-link { color:var(--cm-purple); margin-top:14px; }
+#cm-coaching .cm-article-hero h1 { text-transform:none; font-size:clamp(38px,4.5vw,64px); line-height:1.2; max-width:24ch; }
+#cm-coaching .cm-meta { display:flex; gap:14px; flex-wrap:wrap; font-size:13px; margin-top:25px; color:inherit; }
+#cm-coaching .cm-reading-grid { display:grid; grid-template-columns:220px minmax(0,740px); gap:70px; align-items:start; }
+#cm-coaching .cm-side { position:sticky; top:28px; font-size:14px; }
+#cm-coaching .cm-side p { font-size:14px; }
+#cm-coaching .cm-side a { display:block; padding-block:9px; border-bottom:1px solid rgba(29,35,28,.2); line-height:1.5; }
+#cm-coaching .cm-side a:hover { color:var(--cm-purple); }
+#cm-coaching .cm-side .cm-eyebrow { margin-bottom:15px; }
+#cm-coaching .cm-prose { font-size:17px; line-height:1.85; overflow-wrap:anywhere; }
+#cm-coaching .cm-prose p { margin:0 0 22px; }
+#cm-coaching .cm-prose :is(h2,h3,h4,h5,h6) { font-family:'Epilogue',sans-serif; font-weight:600; text-transform:none; line-height:1.35; letter-spacing:-.025em; margin:40px 0 18px; scroll-margin-top:28px; }
+#cm-coaching .cm-prose h2 { font-size:clamp(25px,2.5vw,32px); }
+#cm-coaching .cm-prose h3 { font-size:23px; }
+#cm-coaching .cm-prose h4 { font-size:20px; }
+#cm-coaching .cm-prose ul, #cm-coaching .cm-prose ol { margin:18px 0 25px; padding-left:25px; }
+#cm-coaching .cm-prose li { margin-bottom:10px; }
+#cm-coaching .cm-prose a { color:var(--cm-purple); text-decoration:underline; text-underline-offset:3px; }
+#cm-coaching .cm-prose img { height:auto; margin:24px 0; max-height:650px; object-fit:contain; }
+#cm-coaching .cm-prose blockquote { border-left:3px solid var(--cm-purple); padding:12px 0 12px 24px; margin:26px 0; }
+#cm-coaching .cm-prose table { display:block; overflow:auto; max-width:100%; }
+#cm-coaching .cm-prose td, #cm-coaching .cm-prose th { padding:8px; border:1px solid #b3b5ad; }
+#cm-coaching .cm-post-cover { margin-bottom:40px; }
+#cm-coaching .cm-post-cover img { width:100%; max-height:500px; object-fit:cover; }
+#cm-coaching .cm-blog-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:46px 30px; }
+#cm-coaching .cm-blog-card { border-bottom:1px solid rgba(29,35,28,.25); padding-bottom:25px; }
+#cm-coaching .cm-blog-card img { aspect-ratio:16/10; object-fit:cover; height:auto; margin-bottom:18px; }
+#cm-coaching .cm-blog-card h2 { font-size:27px; text-transform:none; line-height:1.25; margin:12px 0 15px; }
+#cm-coaching .cm-blog-card p { font-size:15px; }
+#cm-coaching .cm-blog-card .cm-text-link { margin-top:14px; color:var(--cm-purple); }
+#cm-coaching .cm-blog-card .cm-meta { margin:0; font-size:12px; }
+#cm-coaching .cm-tags { display:flex; flex-wrap:wrap; gap:10px; margin-top:25px; }
+#cm-coaching .cm-tags a { padding:7px 12px; border:1px solid currentColor; font-size:12px; border-radius:2px; }
+#cm-coaching .cm-tags a:hover { background:var(--cm-aqua); color:var(--cm-dark); }
+#cm-coaching .cm-faq { border-top:1px solid rgba(29,35,28,.3); padding-block:5px; }
+#cm-coaching .cm-faq:last-child { border-bottom:1px solid rgba(29,35,28,.3); }
+#cm-coaching .cm-faq summary { font-weight:600; font-size:16px; line-height:1.5; cursor:pointer; padding:20px 30px 20px 0; }
+#cm-coaching .cm-faq summary:focus-visible { outline:3px solid var(--cm-purple); outline-offset:3px; }
+#cm-coaching .cm-faq .cm-answer { padding:0 0 22px; max-width:70ch; }
+#cm-coaching .cm-faq .cm-answer p { font-size:16px; margin:0; }
+#cm-coaching .cm-calendar { width:100%; height:760px; border:0; background:white; }
+#cm-coaching .cm-calendar-panel { margin-top:24px; }
+#cm-coaching .cm-calendar-panel summary { cursor:pointer; display:list-item; list-style:disclosure-closed inside; width:fit-content; padding:14px 22px; background:var(--cm-purple); color:white; font-weight:600; font-size:14px; }
+#cm-coaching .cm-calendar-panel[open] summary { list-style:disclosure-open inside; margin-bottom:20px; }
+#cm-coaching .cm-calendar-panel .cm-calendar { margin-top:12px; }
+#cm-coaching .cm-service-aside { background:var(--cm-purple); color:white; padding:32px; }
+#cm-coaching .cm-service-aside h3 { color:var(--cm-aqua); margin-bottom:16px; }
+#cm-coaching .cm-service-aside .cm-text-link { margin-top:16px; }
+#cm-coaching .cm-section-head .cm-intro { max-width:54ch; }
+#cm-coaching .cm-further-section { padding-bottom:16px; }
+#cm-coaching .cm-further-section + .cm-faq-section { padding-top:20px; }
+#cm-coaching .cm-blog-card img.cm-image-complete { object-fit:contain; background:#fff; }
+#cm-coaching .cm-conversation-icon { display:block; width:76px; height:auto; margin-bottom:24px; color:var(--cm-aqua); }
+#cm-coaching .cm-coach-section { padding-block:clamp(36px,4vw,56px); }
+#cm-coaching .cm-coach-grid { display:grid; grid-template-columns:minmax(0,330px) minmax(0,1fr); gap:clamp(28px,4vw,56px); align-items:center; }
+#cm-coaching .cm-coach-photo { margin:0; }
+#cm-coaching .cm-coach-photo img { width:100%; height:auto; }
+#cm-coaching .cm-coach-grid .cm-copy { max-width:62ch; }
+#cm-coaching .cm-coach-grid .cm-copy h2 { margin:10px 0 18px; }
+#cm-coaching .cm-coach-grid .cm-copy h3 { font:600 18px/1.5 'Epilogue',sans-serif; text-transform:none; margin-bottom:16px; }
+#cm-coaching .cm-coach-grid .cm-text-link { margin-top:12px; }
+@media(max-width:700px) {
+ #cm-coaching .cm-coach-grid { grid-template-columns:1fr; gap:26px; }
+ #cm-coaching .cm-coach-photo { width:min(100%,280px); }
+}
+@media (max-width:1000px) {
+ .cm-shell .cm-nav { gap:17px; }
+ .cm-shell .cm-logo img { width:150px; }
+ #cm-coaching .cm-reading-grid { grid-template-columns:190px minmax(0,1fr); gap:40px; }
+}
+@media (max-width:850px) {
+ .cm-shell .cm-wrap { width:calc(100% - 48px); }
+ .cm-shell .cm-nav { display:none; }
+ .cm-shell .cm-header-row { min-height:80px; }
+ .cm-shell .cm-mobile-nav { display:block; }
+ .cm-shell .cm-footer-grid { grid-template-columns:1fr 1fr; }
+ #cm-coaching .cm-lead-grid { grid-template-columns:1fr; gap:28px; }
+ #cm-coaching .cm-blog-grid { grid-template-columns:1fr 1fr; }
+ #cm-coaching .cm-reading-grid { grid-template-columns:1fr; gap:30px; }
+ #cm-coaching .cm-side { position:static; }
+ #cm-coaching .cm-side nav { display:flex; flex-wrap:wrap; gap:6px 20px; }
+ #cm-coaching .cm-side a { width:fit-content; }
+ #cm-coaching .cm-steps, #cm-coaching .cm-links-grid { gap:22px; }
+}
+@media (max-width:620px) {
+ .cm-shell .cm-wrap { width:calc(100% - 40px); }
+ .cm-shell .cm-footer-grid { grid-template-columns:1fr 1fr; gap:30px 20px; }
+ .cm-shell .cm-footer-grid>div:first-child { grid-column:1/-1; }
+ #cm-coaching .cm-steps, #cm-coaching .cm-links-grid, #cm-coaching .cm-blog-grid { grid-template-columns:1fr; }
+ #cm-coaching .cm-facts-grid { gap:15px; grid-template-columns:1fr; padding-block:24px; }
+ #cm-coaching .cm-facts-grid>div { display:grid; grid-template-columns:115px 1fr; gap:10px; align-items:center; }
+ #cm-coaching .cm-facts-grid strong { font-size:24px; }
+ #cm-coaching .cm-scene img { aspect-ratio:5/4; }
+ #cm-coaching .cm-article-hero h1 { font-size:clamp(34px,9vw,48px); }
+ #cm-coaching .cm-prose { font-size:16px; }
+ #cm-coaching .cm-calendar { height:850px; }
+ #cm-coaching .cm-service-aside { padding:24px; }
+}
