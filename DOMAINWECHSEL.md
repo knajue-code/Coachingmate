@@ -6,7 +6,8 @@ Ein normaler Inhalts-Commit darf die Indexierung nicht aktivieren.
 ## Vor dem Umzug
 
 - [ ] Termin und ausdrückliche Freigabe für den Domainwechsel festhalten.
-- [ ] Squarespace-Inhalte und Medien sichern. Die Website lädt Bilder noch vom Squarespace-CDN: vor Stilllegung unabhängig speichern, Bildadressen umstellen und prüfen.
+- [x] Alle 29 auf der neuen Website verwendeten Bilder unverändert in `public/assets/images/` gesichert; sämtliche Bildverweise auf lokale Pfade umgestellt. Herkunft und Prüfsummen stehen in `image-manifest.json`.
+- [ ] Weitere, nur auf Squarespace gespeicherte Inhalte und ungenutzte Medien bei Bedarf separat archivieren.
 - [ ] Datenschutzerklärung auf den tatsächlichen Betrieb mit Netlify, Google Fonts und Calendly prüfen lassen.
 - [ ] Domain in Netlify vorbereiten, HTTPS-Zertifikat und DNS-Zugang prüfen. E-Mail-DNS-Einträge erhalten.
 - [ ] Search-Console-Verifizierung übernehmen und aktuelle URLs/Weiterleitungen dokumentieren.

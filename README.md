@@ -18,7 +18,7 @@ Der Blog umfasst 17 vorhandene Artikel und 12 Themenansichten (die bisher getren
 
 ## Externe Dienste und bestehende Domain
 
-- Bilder werden von den bisherigen Squarespace-CDN-Adressen geladen. Die dortigen Dateien müssen verfügbar bleiben.
+- Alle 29 verwendeten Bilder sind unverändert in `public/assets/images/` gesichert und werden von Netlify ausgeliefert. `image-manifest.json` dokumentiert Herkunft, Dateigröße und SHA-256-Prüfsumme. Die Website benötigt das Squarespace-CDN nicht mehr.
 - Anton und Epilogue werden über Google Fonts geladen.
 - Der bestehende Calendly-Kalender ist auf `/termin/` eingebettet; ein direkter Link steht als Alternative bereit.
 - Es sind keine Zugangsdaten oder lokalen Arbeitsreferenzen enthalten.
