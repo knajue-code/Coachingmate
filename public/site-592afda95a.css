@@ -133,7 +133,7 @@
 .cm-shell .cm-header { background:var(--cm-dark); color:var(--cm-aqua); border-bottom:1px solid rgba(183,252,251,.2); }
 .cm-shell .cm-header-row { display:flex; align-items:center; justify-content:space-between; gap:24px; min-height:102px; }
 .cm-shell .cm-logo { display:block; flex-shrink:0; }
-.cm-shell .cm-logo img { width:188px; height:64px; object-fit:contain; display:block; }
+.cm-shell .cm-logo img { width:225.6px; height:76.8px; object-fit:contain; display:block; }
 .cm-shell .cm-nav { display:flex; align-items:center; gap:26px; }
 .cm-shell .cm-nav>a { font-size:14px; padding-block:12px; }
 .cm-shell .cm-nav>a:hover, .cm-shell [aria-current='page'] { text-decoration:underline; text-underline-offset:6px; }
@@ -251,7 +251,7 @@
 }
 @media (max-width:1000px) {
  .cm-shell .cm-nav { gap:17px; }
- .cm-shell .cm-logo img { width:150px; }
+ .cm-shell .cm-logo img { width:180px; }
  #cm-coaching .cm-reading-grid { grid-template-columns:190px minmax(0,1fr); gap:40px; }
 }
 @media (max-width:850px) {
