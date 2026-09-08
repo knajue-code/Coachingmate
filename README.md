@@ -22,13 +22,13 @@ Der Blog umfasst 17 vorhandene Artikel und 12 Themenansichten (die bisher getren
 - Anton und Epilogue werden über Google Fonts geladen.
 - Der bestehende Calendly-Kalender ist auf `/termin/` eingebettet; ein direkter Link steht als Alternative bereit.
 - Es sind keine Zugangsdaten oder lokalen Arbeitsreferenzen enthalten.
-- Die Domain `www.coachingmate.de` wird durch dieses Deployment nicht umgestellt.
-- Die zusätzliche Netlify-Veröffentlichung bleibt vorerst mit `noindex,nofollow` und `robots.txt` von Suchmaschinen ausgeschlossen; kanonische URLs zeigen auf die vorhandene Coachingmate-Domain. Vor einem endgültigen Domainwechsel Indexierung bewusst aktivieren und die kanonischen URLs überprüfen.
+- Die aktive Hauptdomain ist `https://coachingmate.de`; `www.coachingmate.de` leitet dorthin weiter. Canonicals und Sitemap verwenden die Hauptdomain.
+- SEO-Freigabe durch Jürgen Knappich am 08.09.2026: 31 Inhaltsseiten sind indexierbar. Die 12 Tag-Filter und die 404-Seite bleiben noindex. Die Sitemap enthält die 31 Inhaltsseiten einschließlich Startseite.
 - Impressum, Datenschutz und die ursprünglichen Blogtexte stammen aus der bestehenden Website. Kurze Artikel-Einleitungen, Bildbeschreibungen und praktische FAQ wurden ergänzt. Rechtstexte müssen vor dem Umzug zum tatsächlichen Hosting passen.
 
 ## Prüfung
 
-Der verbindliche Ablauf für den späteren Domainwechsel steht in [DOMAINWECHSEL.md](DOMAINWECHSEL.md). Tag-Filter bleiben dauerhaft noindex; ein normaler Inhalts-Commit aktiviert keine Suchmaschinenfreigabe.
+Der dokumentierte Stand zum Domainwechsel steht in [DOMAINWECHSEL.md](DOMAINWECHSEL.md). Tag-Filter bleiben dauerhaft noindex; ein normaler Inhalts-Commit aktiviert keine Suchmaschinenfreigabe.
 
 Die veröffentlichten HTML-Dateien sind maßgeblich. Der frühere lokale Squarespace-Generator ist ein archivierter Entwurfsstand und darf diese Dateien nicht ungeprüft überschreiben.
 
