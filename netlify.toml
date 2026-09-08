@@ -25,19 +25,6 @@
   status = 301
   force = true
 
-# Keep the original lowercase tag URL working on case-sensitive hosting.
-[[redirects]]
-  from = "/coaching-blog/tag/coaching"
-  to = "/coaching-blog/tag/Coaching/"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/coaching-blog/tag/coaching/"
-  to = "/coaching-blog/tag/Coaching/"
-  status = 301
-  force = true
-
 # Permanent rule: thin topic filters remain excluded after the domain cutover.
 [[headers]]
   for = "/coaching-blog/tag/*"
