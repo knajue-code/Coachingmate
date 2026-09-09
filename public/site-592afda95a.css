@@ -133,7 +133,7 @@
 .cm-shell .cm-header { background:var(--cm-dark); color:var(--cm-aqua); border-bottom:1px solid rgba(183,252,251,.2); }
 .cm-shell .cm-header-row { display:flex; align-items:center; justify-content:space-between; gap:24px; min-height:102px; }
 .cm-shell .cm-logo { display:block; flex-shrink:0; }
-.cm-shell .cm-logo img { width:225.6px; height:76.8px; object-fit:contain; display:block; }
+.cm-shell .cm-logo img { width:270.72px; height:92.16px; object-fit:contain; display:block; }
 .cm-shell .cm-nav { display:flex; align-items:center; gap:26px; }
 .cm-shell .cm-nav>a { font-size:14px; padding-block:12px; }
 .cm-shell .cm-nav>a:hover, .cm-shell [aria-current='page'] { text-decoration:underline; text-underline-offset:6px; }
@@ -251,7 +251,7 @@
 }
 @media (max-width:1000px) {
  .cm-shell .cm-nav { gap:17px; }
- .cm-shell .cm-logo img { width:180px; }
+ .cm-shell .cm-logo img { width:216px; }
  #cm-coaching .cm-reading-grid { grid-template-columns:190px minmax(0,1fr); gap:40px; }
 }
 @media (max-width:850px) {
@@ -282,3 +282,26 @@
  #cm-coaching .cm-calendar { height:850px; }
  #cm-coaching .cm-service-aside { padding:24px; }
 }
+
+/* Approved homepage guide section */
+
+#cm-coaching .cm-guide{background:#b7fcfb;padding:64px 0;color:#1d231c}
+#cm-coaching .cm-guide-grid{display:grid;grid-template-columns:minmax(240px,.8fr) minmax(0,1.2fr);gap:72px;align-items:center}
+#cm-coaching .cm-guide h2{font-size:clamp(36px,4.3vw,64px);line-height:1.07;margin:16px 0 24px}
+#cm-coaching .cm-guide-copy>p{max-width:610px;line-height:1.65}
+#cm-coaching .cm-guide-list{list-style:none;padding:0;margin:24px 0;display:grid;gap:12px}
+#cm-coaching .cm-guide-list li{display:flex;gap:12px;line-height:1.5}
+#cm-coaching .cm-guide-list li:before{content:'✓';color:#584a95;font-weight:700}
+#cm-coaching .cm-guide .cm-button{background:#584a95;color:white;border-color:#584a95;display:inline-flex}
+#cm-coaching .cm-guide .cm-button:hover{background:#1d231c;border-color:#1d231c}
+#cm-coaching .cm-guide-note{font-size:13px;margin:16px 0 0}
+#cm-coaching .cm-guide-note a{color:inherit}
+#cm-coaching .cm-guide-art{padding:20px 28px 24px;position:relative}
+#cm-coaching .cm-guide-cover{max-width:320px;margin:auto;background:#1d231c;color:white;aspect-ratio:210/297;box-shadow:12px 14px 0 #fff,26px 30px 38px #1d231c30;transform:rotate(-5deg);padding:28px;display:flex;flex-direction:column;position:relative;border-left:7px solid #424b40;box-sizing:border-box}
+#cm-coaching .cm-guide-brand{font-size:16px;font-weight:700;letter-spacing:-.5px}
+#cm-coaching .cm-guide-cover strong{font-family:Anton,sans-serif;font-size:102px;color:#b7fcfb;line-height:1;margin-top:25px;font-weight:400}
+#cm-coaching .cm-guide-cover h3{font-family:Anton,sans-serif;font-size:32px;line-height:1.1;margin:10px 0;color:white}
+#cm-coaching .cm-guide-cover p{font-size:12px;line-height:1.55;color:white;margin:0}
+#cm-coaching .cm-guide-cover footer{margin-top:auto;padding-top:20px;font-size:11px;color:#b7fcfb}
+#cm-coaching .cm-guide-badge{position:absolute;right:4px;bottom:38px;width:92px;height:92px;border-radius:50%;background:#584a95;color:white;display:grid;place-content:center;text-align:center;font-weight:700;line-height:1.5;box-shadow:0 5px 16px #1d231c20}
+@media(max-width:760px){#cm-coaching .cm-guide-grid{grid-template-columns:1fr;gap:36px}#cm-coaching .cm-guide{padding:42px 0}#cm-coaching .cm-guide-art{max-width:330px;margin:auto;width:100%;box-sizing:border-box}#cm-coaching .cm-guide-cover{max-width:240px;padding:20px}#cm-coaching .cm-guide-cover strong{font-size:75px}#cm-coaching .cm-guide-cover h3{font-size:25px}}
