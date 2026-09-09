@@ -305,3 +305,6 @@
 #cm-coaching .cm-guide-cover footer{margin-top:auto;padding-top:20px;font-size:11px;color:#b7fcfb}
 #cm-coaching .cm-guide-badge{position:absolute;right:4px;bottom:38px;width:92px;height:92px;border-radius:50%;background:#584a95;color:white;display:grid;place-content:center;text-align:center;font-weight:700;line-height:1.5;box-shadow:0 5px 16px #1d231c20}
 @media(max-width:760px){#cm-coaching .cm-guide-grid{grid-template-columns:1fr;gap:36px}#cm-coaching .cm-guide{padding:42px 0}#cm-coaching .cm-guide-art{max-width:330px;margin:auto;width:100%;box-sizing:border-box}#cm-coaching .cm-guide-cover{max-width:240px;padding:20px}#cm-coaching .cm-guide-cover strong{font-size:75px}#cm-coaching .cm-guide-cover h3{font-size:25px}}
+
+/* Preserve the complete square interview artwork at its native size. */
+#cm-coaching .cm-post-cover.cm-interview-cover img { display:block; width:100%; max-width:600px; height:auto; max-height:none; object-fit:contain; margin-inline:auto; }
