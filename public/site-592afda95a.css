@@ -360,8 +360,4 @@
 #cm-coaching .cm-courage blockquote{font-size:34px;margin:16px 0 20px;max-width:18ch}
 }
 
-#cm-coaching .cm-calendar-consent{padding:clamp(24px,5vw,60px);max-width:850px;margin:auto}
-#cm-coaching .cm-calendar-toggle{font:inherit;font-weight:600;padding:16px 24px;background:#1d231c;color:#b7fcfb;border:2px solid #1d231c;cursor:pointer;margin:16px 0}
-#cm-coaching .cm-calendar-toggle:focus-visible{outline:3px solid #167d7b;outline-offset:4px}
-#cm-coaching #cm-calendar-disable{margin:20px}
 #cm-coaching [hidden]{display:none!important}
