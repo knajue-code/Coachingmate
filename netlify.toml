@@ -11,6 +11,8 @@
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'sha256-XTqURPyFx8e77fci83N/7Z5d9BO3ubFj3fZgFMGhzqo='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-src https://calendly.com; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'self'; form-action 'self'; upgrade-insecure-requests"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
 [[redirects]]
