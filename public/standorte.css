@@ -1,0 +1,16 @@
+
+#cm-coaching .local-hero h1{font-size:clamp(40px,4.7vw,66px);max-width:17ch}
+#cm-coaching .local-hero .cm-scene img{aspect-ratio:4/5;object-position:center 23%}
+#cm-coaching .local-note{font-size:13px;margin-top:20px;opacity:.85}
+#cm-coaching .local-split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+#cm-coaching .local-copy p+p{margin-top:18px}
+#cm-coaching .local-copy h3{margin:26px 0 12px}
+#cm-coaching .local-panel{background:#1d231c;color:#b2fafa;padding:32px}
+#cm-coaching .local-panel p{margin-top:16px}
+#cm-coaching .local-panel .cm-text-link{margin-top:20px}
+#cm-coaching .local-kicker{margin-bottom:16px}
+#cm-coaching .local-jump{display:flex;flex-wrap:wrap;gap:8px 26px;padding-block:18px;border-bottom:1px solid #d6d8d3}
+#cm-coaching .local-jump a{font-size:14px;text-decoration:underline;text-underline-offset:5px;padding:8px 0}
+#cm-coaching .local-section{scroll-margin-top:24px}
+#cm-coaching .local-faq .cm-answer p{max-width:75ch}
+@media(max-width:700px){#cm-coaching .local-split{grid-template-columns:1fr;gap:28px}#cm-coaching .local-panel{padding:26px}#cm-coaching .local-hero h1{font-size:42px}#cm-coaching .local-hero .cm-scene{max-width:420px}#cm-coaching .local-jump{gap:4px 22px}}
